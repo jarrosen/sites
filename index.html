@@ -40,12 +40,9 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.5);
         }
         
-        /* STEP 2: Add your logo image here if you have one */
-        .logo {
-            font-size: 1.8em;
-            font-weight: 900;
-            color: var(--accent-color);
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        .logo-img {
+            height: 60px; /* Controls the logo's height */
+            width: auto;  /* Maintains the aspect ratio */
         }
 
         .nav-links {
@@ -194,7 +191,8 @@
 <body>
 
     <header class="header">
-        <div class="logo">Britalian Football</div>
+        <!-- The logo is embedded here. You can replace the long 'src' string if you ever want to change the image. -->
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/4QAiRXhpZgAASUkqAAgAAAABABIBAwABAAAAAQAAABoBBQABAAAAVgAAABsBBQABAAAAXgAAACgBAwABAAAAAgAAADEBAgANAAAAZgAAADIBAgAUAAAAjAAAAGmHBAABAAAApAAAAKYAAABgAAAAAQAAAGAAAAABAAAAQVNDSUkAAABTY3JlZW5zaG90/+0AOFBob3Rvc2hvcCAzLjAAOEJJTQQEAAAAAAADHAIAAAIAAhAIAAEAAAAAABwCeAADAAEAAAAAABwCeAAGAAEAAAAAABwCeAAgAAEAAAAAABwCeAAoAAEAAAAAABwCeAA0AAEAAAAAABwCeAAPAAEAAAAAABwCeAAUAAEAAAAAABwCeAAgAAEAAAAAABwCeAAIAAEAAAAAABwCeAAgAAEAAAAAABwC//wAARCAA5AIUDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1VXV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8vP09fb3+Pn6/9sAQwABAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBD/9sAQwEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBD/90ABAAC/9oADAMBAAIRAxEAAAGgP05wAEOQRAgYAAAKAAIAEAAAAgCMwIAAgAACVYQACAAAoAJgQAAwQAYhABoQAhAAwEABoQAhAAgP/aAAgBAgABBQDSFqS0pSlLSH/aAAgBAwABBQDSGkpSltKWlP/aAAgBAQABBQChS1PzU/JT3lPcUlxSmtKa0prUmtL/2gAIAQICBj8A/wD/2gAIAQMCBj8A/wD/2gAIAQEBBj8A/wD/2Q==" alt="Britalian Football Logo" class="logo-img">
         <nav class="nav-links">
             <a href="#home">Home</a>
             <a href="#players">Players</a>
@@ -256,17 +254,12 @@
                     <p class="role">Co-owner</p>
                     <p>Drives the competitive spirit of the league forward.</p>
                 </div>
-                <div class="card">
-                    <h3>Sebastian</h3>
-                    <p class="role">Member</p>
-                    <p>The newest addition to the league, ready to make a mark.</p>
-                </div>
             </div>
         </section>
 
         <!-- Leaderboards Section -->
         <section id="leaderboards" class="content-section">
-            <h2>Leaderboards</h2>
+            <h2>Season Standings</h2>
             
             <h3>Touchdowns Scored</h3>
             <table class="leaderboard-table">
@@ -279,14 +272,13 @@
                 </thead>
                 <tbody>
                     <tr><td>1</td><td>Vihaan</td><td>1</td></tr>
-                    <tr><td>1</td><td>Ben</td><td>1</td></tr>
-                    <tr><td>1</td><td>Harrison</td><td>1</td></tr>
-                    <tr><td>4</td><td>Max</td><td>0</td></tr>
-                    <tr><td>4</td><td>Jared</td><td>0</td></tr>
-                    <tr><td>4</td><td>Jaden</td><td>0</td></tr>
-                    <tr><td>4</td><td>Micheal</td><td>0</td></tr>
-                    <tr><td>4</td><td>Jason</td><td>0</td></tr>
-                    <tr><td>4</td><td>Sebastian</td><td>0</td></tr>
+                    <tr><td>2</td><td>Max</td><td>0</td></tr>
+                    <tr><td>2</td><td>Jared</td><td>0</td></tr>
+                    <tr><td>2</td><td>Ben</td><td>0</td></tr>
+                    <tr><td>2</td><td>Jaden</td><td>0</td></tr>
+                    <tr><td>2</td><td>Micheal</td><td>0</td></tr>
+                    <tr><td>2</td><td>Jason</td><td>0</td></tr>
+                    <tr><td>2</td><td>Harrison</td><td>0</td></tr>
                 </tbody>
             </table>
 
@@ -300,7 +292,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>1</td><td>Jared</td><td>2</td></tr>
+                    <tr><td>1</td><td>Jared</td><td>1</td></tr>
                     <tr><td>2</td><td>Max</td><td>0</td></tr>
                     <tr><td>2</td><td>Vihaan</td><td>0</td></tr>
                     <tr><td>2</td><td>Ben</td><td>0</td></tr>
@@ -308,7 +300,6 @@
                     <tr><td>2</td><td>Micheal</td><td>0</td></tr>
                     <tr><td>2</td><td>Jason</td><td>0</td></tr>
                     <tr><td>2</td><td>Harrison</td><td>0</td></tr>
-                    <tr><td>2</td><td>Sebastian</td><td>0</td></tr>
                 </tbody>
             </table>
 
@@ -323,14 +314,13 @@
                 </thead>
                 <tbody>
                     <tr><td>1</td><td>Ben</td><td>1</td></tr>
-                    <tr><td>1</td><td>Jaden</td><td>1</td></tr>
-                    <tr><td>3</td><td>Max</td><td>0</td></tr>
-                    <tr><td>3</td><td>Vihaan</td><td>0</td></tr>
-                    <tr><td>3</td><td>Jared</td><td>0</td></tr>
-                    <tr><td>3</td><td>Micheal</td><td>0</td></tr>
-                    <tr><td>3</td><td>Jason</td><td>0</td></tr>
-                    <tr><td>3</td><td>Harrison</td><td>0</td></tr>
-                    <tr><td>3</td><td>Sebastian</td><td>0</td></tr>
+                    <tr><td>2</td><td>Max</td><td>0</td></tr>
+                    <tr><td>2</td><td>Vihaan</td><td>0</td></tr>
+                    <tr><td>2</td><td>Jared</td><td>0</td></tr>
+                    <tr><td>2</td><td>Jaden</td><td>0</td></tr>
+                    <tr><td>2</td><td>Micheal</td><td>0</td></tr>
+                    <tr><td>2</td><td>Jason</td><td>0</td></tr>
+                    <tr><td>2</td><td>Harrison</td><td>0</td></tr>
                 </tbody>
             </table>
 
@@ -352,7 +342,6 @@
                     <tr><td>1</td><td>Micheal</td><td>0</td></tr>
                     <tr><td>1</td><td>Jason</td><td>0</td></tr>
                     <tr><td>1</td><td>Harrison</td><td>0</td></tr>
-                    <tr><td>1</td><td>Sebastian</td><td>0</td></tr>
                 </tbody>
             </table>
         </section>
@@ -375,6 +364,9 @@
                 </li>
                 <li>
                     <strong>The Ball:</strong> The game is played exclusively with a large, yellow, foam or rubber ball. No other ball is permitted.
+                </li>
+                <li>
+                    <strong>The Britalian Clause:</strong> Once per game, a team can invoke the "Britalian Clause," allowing them to attempt a trick play that would otherwise be illegal (e.g., two forward passes).
                 </li>
             </ul>
         </section>
@@ -402,6 +394,8 @@
 
 </body>
 </html>
+
+
 
 
 
