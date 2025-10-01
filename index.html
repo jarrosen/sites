@@ -92,6 +92,19 @@
         
         h1 { font-size: 2.5em; }
         h2 { font-size: 2em; }
+        
+        .content-section h3 {
+            color: var(--secondary-color);
+            font-size: 1.6em;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #555;
+        }
+        .content-section h3:first-of-type {
+            margin-top: 20px; /* Less margin for the first one */
+        }
 
         /* Card styles for players/creators */
         .card-container {
@@ -249,45 +262,88 @@
         <!-- Leaderboards Section -->
         <section id="leaderboards" class="content-section">
             <h2>Season Standings</h2>
+            
+            <h3>Touchdowns Scored</h3>
             <table class="leaderboard-table">
                 <thead>
                     <tr>
                         <th>Rank</th>
                         <th>Player</th>
-                        <th>Wins</th>
-                        <th>Losses</th>
-                        <th>Touchdowns</th>
+                        <th>TDs Scored</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <tr><td>1</td><td>Vhiaan</td><td>1</td></tr>
+                    <tr><td>2</td><td>Max</td><td>0</td></tr>
+                    <tr><td>2</td><td>Jared</td><td>0</td></tr>
+                    <tr><td>2</td><td>Ben</td><td>0</td></tr>
+                    <tr><td>2</td><td>Jaden</td><td>0</td></tr>
+                    <tr><td>2</td><td>Micheal</td><td>0</td></tr>
+                    <tr><td>2</td><td>Jason</td><td>0</td></tr>
+                    <tr><td>2</td><td>Harrison</td><td>0</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Touchdowns Thrown</h3>
+            <table class="leaderboard-table">
+                <thead>
                     <tr>
-                        <td>1</td>
-                        <td>Player One</td>
-                        <td>12</td>
-                        <td>2</td>
-                        <td>35</td>
+                        <th>Rank</th>
+                        <th>Player</th>
+                        <th>TDs Thrown</th>
                     </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Jared</td><td>1</td></tr>
+                    <tr><td>2</td><td>Max</td><td>0</td></tr>
+                    <tr><td>2</td><td>Vhiaan</td><td>0</td></tr>
+                    <tr><td>2</td><td>Ben</td><td>0</td></tr>
+                    <tr><td>2</td><td>Jaden</td><td>0</td></tr>
+                    <tr><td>2</td><td>Micheal</td><td>0</td></tr>
+                    <tr><td>2</td><td>Jason</td><td>0</td></tr>
+                    <tr><td>2</td><td>Harrison</td><td>0</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Picks (Interceptions)</h3>
+            <table class="leaderboard-table">
+                <thead>
                     <tr>
-                        <td>2</td>
-                        <td>Player Two</td>
-                        <td>10</td>
-                        <td>4</td>
-                        <td>42</td>
+                        <th>Rank</th>
+                        <th>Player</th>
+                        <th>Picks</th>
                     </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Ben</td><td>1</td></tr>
+                    <tr><td>2</td><td>Max</td><td>0</td></tr>
+                    <tr><td>2</td><td>Vhiaan</td><td>0</td></tr>
+                    <tr><td>2</td><td>Jared</td><td>0</td></tr>
+                    <tr><td>2</td><td>Jaden</td><td>0</td></tr>
+                    <tr><td>2</td><td>Micheal</td><td>0</td></tr>
+                    <tr><td>2</td><td>Jason</td><td>0</td></tr>
+                    <tr><td>2</td><td>Harrison</td><td>0</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Pick 6s</h3>
+            <table class="leaderboard-table">
+                <thead>
                     <tr>
-                        <td>3</td>
-                        <td>Player Three</td>
-                        <td>8</td>
-                        <td>6</td>
-                        <td>15</td>
+                        <th>Rank</th>
+                        <th>Player</th>
+                        <th>Pick 6s</th>
                     </tr>
-                     <tr>
-                        <td>4</td>
-                        <td>Player Four</td>
-                        <td>5</td>
-                        <td>9</td>
-                        <td>5 (FG)</td>
-                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Max</td><td>0</td></tr>
+                    <tr><td>1</td><td>Vhiaan</td><td>0</td></tr>
+                    <tr><td>1</td><td>Jared</td><td>0</td></tr>
+                    <tr><td>1</td><td>Ben</td><td>0</td></tr>
+                    <tr><td>1</td><td>Jaden</td><td>0</td></tr>
+                    <tr><td>1</td><td>Micheal</td><td>0</td></tr>
+                    <tr><td>1</td><td>Jason</td><td>0</td></tr>
+                    <tr><td>1</td><td>Harrison</td><td>0</td></tr>
                 </tbody>
             </table>
         </section>
@@ -340,4 +396,6 @@
 
 </body>
 </html>
+
+
 
