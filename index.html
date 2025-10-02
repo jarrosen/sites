@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <me<!-- -->ta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- STEP 1: Change the website name here -->
     <title>Britalian Football</title>
-    Google Fonts
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
@@ -238,12 +238,12 @@
                 <div class="card">
                     <h3>Ben</h3>
                     <p class="role">Member</p>
-                    <p>A dedicated player, essential to the team's success on the field.</p>
+                    <p>A rising star known for agility and clutch plays.</p>
                 </div>
                 <div class="card">
                     <h3>Jaden</h3>
                     <p class="role">Member</p>
-                    <p>A rising star known for agility and clutch plays.</p>
+                    <p>A dedicated player, essential to the team's success on the field.</p>
                 </div>
                 <div class="card">
                     <h3>Micheal</h3>
@@ -353,7 +353,7 @@
                     <tr><td>1</td><td>Jared</td><td>0</td></tr>
                     <tr><td>1</td><td>Ben</td><td>0</td></tr>
                     <tr><td>1</td><td>Jaden</td><td>0</td></tr>
-                    <tr><td>1</td><td>Micheal</td><td>0</td></tr>
+                    <tr><td>1</td><td>Miche-al</td><td>0</td></tr>
                     <tr><td>1</td><td>Jason</td><td>0</td></tr>
                     <tr><td>1</td><td>Harrison</td><td>0</td></tr>
                     <tr><td>1</td><td>Sebastian</td><td>0</td></tr>
@@ -404,8 +404,37 @@
         <p>&copy; 2025 Britalian Football League. All Rights Reserved.</p>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+            const header = document.querySelector('.header');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        const headerHeight = header ? header.offsetHeight : 0;
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>
+
+
 
 
 
