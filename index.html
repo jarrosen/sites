@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <me<!-- -->ta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- STEP 1: Change the website name here -->
     <title>Britalian Football</title>
-    <!-- Google Fonts -->
+    Google Fonts
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
@@ -16,6 +16,10 @@
             --accent-color: #f1c40f; /* Bold gold/yellow */
             --text-color: #e0e0e0;
             --dark-bg: #1a1a1a;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -40,9 +44,12 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.5);
         }
         
-        .logo-img {
-            height: 60px; /* Controls the logo's height */
-            width: auto;  /* Maintains the aspect ratio */
+        /* STEP 2: Add your logo image here if you have one */
+        .logo {
+            font-size: 1.8em;
+            font-weight: 900;
+            color: var(--accent-color);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
         }
 
         .nav-links {
@@ -191,8 +198,7 @@
 <body>
 
     <header class="header">
-        <!-- The logo is embedded here. You can replace the long 'src' string if you ever want to change the image. -->
-        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/4QAiRXhpZgAASUkqAAgAAAABABIBAwABAAAAAQAAABoBBQABAAAAVgAAABsBBQABAAAAXgAAACgBAwABAAAAAgAAADEBAgANAAAAZgAAADIBAgAUAAAAjAAAAGmHBAABAAAApAAAAKYAAABgAAAAAQAAAGAAAAABAAAAQVNDSUkAAABTY3JlZW5zaG90/+0AOFBob3Rvc2hvcCAzLjAAOEJJTQQEAAAAAAADHAIAAAIAAhAIAAEAAAAAABwCeAADAAEAAAAAABwCeAAGAAEAAAAAABwCeAAgAAEAAAAAABwCeAAoAAEAAAAAABwCeAA0AAEAAAAAABwCeAAPAAEAAAAAABwCeAAUAAEAAAAAABwCeAAgAAEAAAAAABwCeAAIAAEAAAAAABwCeAAgAAEAAAAAABwC//wAARCAA5AIUDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1VXV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8vP09fb3+Pn6/9sAQwABAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBD/9sAQwEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBD/90ABAAC/9oADAMBAAIRAxEAAAGgP05wAEOQRAgYAAAKAAIAEAAAAgCMwIAAgAACVYQACAAAoAJgQAAwQAYhABoQAhAAwEABoQAhAAgP/aAAgBAgABBQDSFqS0pSlLSH/aAAgBAwABBQDSGkpSltKWlP/aAAgBAQABBQChS1PzU/JT3lPcUlxSmtKa0prUmtL/2gAIAQICBj8A/wD/2gAIAQMCBj8A/wD/2gAIAQEBBj8A/wD/2Q==" alt="Britalian Football Logo" class="logo-img">
+        <div class="logo">Britalian Football</div>
         <nav class="nav-links">
             <a href="#home">Home</a>
             <a href="#players">Players</a>
@@ -254,12 +260,17 @@
                     <p class="role">Co-owner</p>
                     <p>Drives the competitive spirit of the league forward.</p>
                 </div>
+                <div class="card">
+                    <h3>Sebastian</h3>
+                    <p class="role">Member</p>
+                    <p>The newest member of the league, ready to make an impact.</p>
+                </div>
             </div>
         </section>
 
         <!-- Leaderboards Section -->
         <section id="leaderboards" class="content-section">
-            <h2>Season Standings</h2>
+            <h2>Leaderboards</h2>
             
             <h3>Touchdowns Scored</h3>
             <table class="leaderboard-table">
@@ -272,13 +283,14 @@
                 </thead>
                 <tbody>
                     <tr><td>1</td><td>Vihaan</td><td>1</td></tr>
-                    <tr><td>2</td><td>Max</td><td>0</td></tr>
-                    <tr><td>2</td><td>Jared</td><td>0</td></tr>
-                    <tr><td>2</td><td>Ben</td><td>0</td></tr>
-                    <tr><td>2</td><td>Jaden</td><td>0</td></tr>
-                    <tr><td>2</td><td>Micheal</td><td>0</td></tr>
-                    <tr><td>2</td><td>Jason</td><td>0</td></tr>
-                    <tr><td>2</td><td>Harrison</td><td>0</td></tr>
+                    <tr><td>1</td><td>Ben</td><td>1</td></tr>
+                    <tr><td>1</td><td>Harrison</td><td>1</td></tr>
+                    <tr><td>4</td><td>Max</td><td>0</td></tr>
+                    <tr><td>4</td><td>Jared</td><td>0</td></tr>
+                    <tr><td>4</td><td>Jaden</td><td>0</td></tr>
+                    <tr><td>4</td><td>Micheal</td><td>0</td></tr>
+                    <tr><td>4</td><td>Jason</td><td>0</td></tr>
+                    <tr><td>4</td><td>Sebastian</td><td>0</td></tr>
                 </tbody>
             </table>
 
@@ -292,7 +304,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>1</td><td>Jared</td><td>1</td></tr>
+                    <tr><td>1</td><td>Jared</td><td>2</td></tr>
                     <tr><td>2</td><td>Max</td><td>0</td></tr>
                     <tr><td>2</td><td>Vihaan</td><td>0</td></tr>
                     <tr><td>2</td><td>Ben</td><td>0</td></tr>
@@ -300,6 +312,7 @@
                     <tr><td>2</td><td>Micheal</td><td>0</td></tr>
                     <tr><td>2</td><td>Jason</td><td>0</td></tr>
                     <tr><td>2</td><td>Harrison</td><td>0</td></tr>
+                    <tr><td>2</td><td>Sebastian</td><td>0</td></tr>
                 </tbody>
             </table>
 
@@ -314,13 +327,14 @@
                 </thead>
                 <tbody>
                     <tr><td>1</td><td>Ben</td><td>1</td></tr>
-                    <tr><td>2</td><td>Max</td><td>0</td></tr>
-                    <tr><td>2</td><td>Vihaan</td><td>0</td></tr>
-                    <tr><td>2</td><td>Jared</td><td>0</td></tr>
-                    <tr><td>2</td><td>Jaden</td><td>0</td></tr>
-                    <tr><td>2</td><td>Micheal</td><td>0</td></tr>
-                    <tr><td>2</td><td>Jason</td><td>0</td></tr>
-                    <tr><td>2</td><td>Harrison</td><td>0</td></tr>
+                    <tr><td>1</td><td>Jaden</td><td>1</td></tr>
+                    <tr><td>3</td><td>Max</td><td>0</td></tr>
+                    <tr><td>3</td><td>Vihaan</td><td>0</td></tr>
+                    <tr><td>3</td><td>Jared</td><td>0</td></tr>
+                    <tr><td>3</td><td>Micheal</td><td>0</td></tr>
+                    <tr><td>3</td><td>Jason</td><td>0</td></tr>
+                    <tr><td>3</td><td>Harrison</td><td>0</td></tr>
+                    <tr><td>3</td><td>Sebastian</td><td>0</td></tr>
                 </tbody>
             </table>
 
@@ -342,6 +356,7 @@
                     <tr><td>1</td><td>Micheal</td><td>0</td></tr>
                     <tr><td>1</td><td>Jason</td><td>0</td></tr>
                     <tr><td>1</td><td>Harrison</td><td>0</td></tr>
+                    <tr><td>1</td><td>Sebastian</td><td>0</td></tr>
                 </tbody>
             </table>
         </section>
@@ -360,13 +375,10 @@
                     <strong>Contact:</strong> The game is strictly two-hand touch. However, blocking and setting picks for your teammates are fully allowed and encouraged.
                 </li>
                 <li>
-                    <strong>Defense:</strong> Any and all defenders are allowed to rush the quarterback on any given play.
+                    <strong>Defense:</strong> Defenders are only allowed to rush the quarterback after a count of "10 Mississippi".
                 </li>
                 <li>
                     <strong>The Ball:</strong> The game is played exclusively with a large, yellow, foam or rubber ball. No other ball is permitted.
-                </li>
-                <li>
-                    <strong>The Britalian Clause:</strong> Once per game, a team can invoke the "Britalian Clause," allowing them to attempt a trick play that would otherwise be illegal (e.g., two forward passes).
                 </li>
             </ul>
         </section>
@@ -374,7 +386,7 @@
         <!-- Creators Section -->
         <section id="creators" class="content-section">
             <h2>Meet the Founders</h2>
-            <p>Britalian Football wasn't born in a boardroom. It was forged on the fields of Pasadena by a group of friends with a love for competition and a passion for the game. What started as a simple backyard pastime quickly evolved into the organized, high-stakes sport we know and love today.</p>
+            <p>Britalian Football wasn't born in a boardroom. It was forged on the fields of POB Middle School in Plainview, New York by a group of friends with a love for competition and a healthy dose of rivalry, evolving into the sport we know and love today.</p>
             <div class="card-container">
                  <div class="card">
                     <h3>Max (Owner)</h3>
@@ -394,6 +406,20 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
